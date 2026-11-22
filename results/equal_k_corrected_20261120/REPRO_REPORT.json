@@ -1,0 +1,101 @@
+{
+  "scope": "EQUAL-K ONLY; NO MODEL TRAINING; existing Full Agent predictions left untouched",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "sklearn": "1.6.1",
+  "source_sha256": {
+    "input_csv": "64b9937b7e949e6656aa2532243846c214f0a35c3a32bb9d6c8ef59cce0ff27b",
+    "predictions_csv": "43197cc6aedee8d13780fbd9e535fe7c8aee60fc67af2aa99a33947b2a7b28e2",
+    "head_raw": "30f007a415366b583a4505e888a7717111e1e86714e5c7614dc3c59ff101d462",
+    "head_prob": "c5f85c71b566fed450278ebadd6d3500bbb6348d7d1515b9839a3de4185a92d3",
+    "reference_py": "e63704eed2b044678eb7a5942ac9727e51e6b496591f83cf680efd5f8189c08e"
+  },
+  "method": "P22 frozen qraw/qprob + original F.equal_k_rule; k from archived Full changes",
+  "new_equal_k_metrics": [
+    {
+      "year": 2025,
+      "policy": "B0_CONFIDENCE_EQUAL_K",
+      "k_from_full_agent": 12,
+      "archived_changed": 11,
+      "different_from_archived_rows": 1,
+      "changed": 12,
+      "corrected": 5,
+      "harmed": 3,
+      "wrong_to_wrong": 4,
+      "net": 2,
+      "accuracy_pct": 62.17712177,
+      "macro_f1_pct": 36.16699665
+    },
+    {
+      "year": 2025,
+      "policy": "B1_MARGIN_EQUAL_K",
+      "k_from_full_agent": 12,
+      "archived_changed": 11,
+      "different_from_archived_rows": 1,
+      "changed": 12,
+      "corrected": 9,
+      "harmed": 2,
+      "wrong_to_wrong": 1,
+      "net": 7,
+      "accuracy_pct": 63.099631,
+      "macro_f1_pct": 38.28460298
+    },
+    {
+      "year": 2026,
+      "policy": "B0_CONFIDENCE_EQUAL_K",
+      "k_from_full_agent": 2,
+      "archived_changed": 4,
+      "different_from_archived_rows": 2,
+      "changed": 2,
+      "corrected": 1,
+      "harmed": 1,
+      "wrong_to_wrong": 0,
+      "net": 0,
+      "accuracy_pct": 55.0,
+      "macro_f1_pct": 28.23725982
+    },
+    {
+      "year": 2026,
+      "policy": "B1_MARGIN_EQUAL_K",
+      "k_from_full_agent": 2,
+      "archived_changed": 4,
+      "different_from_archived_rows": 2,
+      "changed": 2,
+      "corrected": 2,
+      "harmed": 0,
+      "wrong_to_wrong": 0,
+      "net": 2,
+      "accuracy_pct": 60.0,
+      "macro_f1_pct": 39.87468672
+    }
+  ],
+  "full_agent_unchanged_audit": [
+    {
+      "year": 2025,
+      "rows": 542,
+      "full_agent_changed": 12,
+      "full_agent_metric_CHECK_ONLY": {
+        "changed": 12,
+        "corrected": 12,
+        "harmed": 0,
+        "wrong_to_wrong": 0,
+        "net": 12,
+        "accuracy_pct": 64.02214022,
+        "macro_f1_pct": 39.27453317
+      }
+    },
+    {
+      "year": 2026,
+      "rows": 40,
+      "full_agent_changed": 2,
+      "full_agent_metric_CHECK_ONLY": {
+        "changed": 2,
+        "corrected": 2,
+        "harmed": 0,
+        "wrong_to_wrong": 0,
+        "net": 2,
+        "accuracy_pct": 60.0,
+        "macro_f1_pct": 35.65789474
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+seed,cls,note,max_abs_resid,mean_abs_resid,n_rows_above_1e_6,shap_shape,expected_value,expected_value_constant_across_rows
+42,CORROSION,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.93998470901613e-07,2.7913843758307094e-08,0,"[6417, 6, 13]",0.2477968619119543,True
+42,EQUIPMENT_FAILURE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.0237792464072868e-07,3.366309050171169e-08,0,"[6417, 6, 13]",-2.183672298503628,True
+42,EXTERNAL_DAMAGE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.7040741440155216e-07,3.446117176568493e-08,0,"[6417, 6, 13]",1.6342687210109155,True
+42,MATERIAL_DEFECT,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.3655343700236244e-07,2.2034155754472996e-08,0,"[6417, 6, 13]",0.8954873449517969,True
+42,OPERATIONAL,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.419441564287638e-07,1.8529431256634792e-08,0,"[6417, 6, 13]",-1.5359782105011297,True
+42,OTHER,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.2787710845785227e-07,1.770023824184953e-08,0,"[6417, 6, 13]",0.9420975811303128,True
+123,CORROSION,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.5573391937427914e-07,2.5877390684226527e-08,0,"[6417, 6, 13]",0.22776028616509983,True
+123,EQUIPMENT_FAILURE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.0240684461825253e-07,3.277140535184267e-08,0,"[6417, 6, 13]",-2.1787175778246524,True
+123,EXTERNAL_DAMAGE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.8968285075970925e-07,3.418786619564754e-08,0,"[6417, 6, 13]",1.6337656014446729,True
+123,MATERIAL_DEFECT,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.4090435662694745e-07,2.357475584395602e-08,0,"[6417, 6, 13]",0.903377890566313,True
+123,OPERATIONAL,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.3289361122659216e-07,2.0137396830032223e-08,0,"[6417, 6, 13]",-1.5378672542369065,True
+123,OTHER,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.3018065803116485e-07,1.7506454140278126e-08,0,"[6417, 6, 13]",0.9516810538857575,True
+456,CORROSION,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.779220027449014e-07,2.7144070351325527e-08,0,"[6417, 6, 13]",0.2395708399543568,True
+456,EQUIPMENT_FAILURE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,2.039552344790252e-07,3.2896192572762574e-08,0,"[6417, 6, 13]",-2.1287446346173065,True
+456,EXTERNAL_DAMAGE,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.713404884640113e-07,3.392247311347201e-08,0,"[6417, 6, 13]",1.6404972559501942,True
+456,MATERIAL_DEFECT,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.2595479859101033e-07,2.3011936247546855e-08,0,"[6417, 6, 13]",0.8867952528077474,True
+456,OPERATIONAL,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.1422673384942073e-07,1.9887797558139083e-08,0,"[6417, 6, 13]",-1.5855378637818116,True
+456,OTHER,SHAP cache stored in float32; float64 direct reconstruction residual ~1e-14,1.2184381770197206e-07,1.791754507811299e-08,0,"[6417, 6, 13]",0.9474191496874281,True

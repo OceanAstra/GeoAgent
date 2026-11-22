@@ -1,0 +1,52 @@
+# Optional dependencies for *re-training* the eight adapted baselines.
+#
+# NOT needed for: reproduce/verify_manifest.py, reproduce/verify_release_metrics.py,
+# reproduce/verify_baselines.py, agent/feedback/* (P23 replay), or the frozen
+# classifier inference in experiments/geoad_code/inference/run_inference.py.
+# Those need only reproduce/requirements-pinned.txt.
+#
+# Scope and evidence level of these pins
+# --------------------------------------
+# These are the versions that were present in the environment where the archived
+# predictions were produced and where the 2026-11-21 spot re-runs were executed.
+# CIC and AUTDL re-ran to the archived metric with exactly these versions; DeepPipe,
+# DeepPipeNet, SART-1DCNN and SMDPSO-SVM also ran to completion here but their
+# stochastic re-training is not expected to reproduce archived row-level output
+# bit-for-bit (see docs/BASELINES_AND_PROTOCOL.md). A fresh `pip install` in a brand-new
+# virtual environment has NOT been demonstrated on a clean machine; treat the block
+# below as a record of a known-good set, not as a tested installation recipe.
+
+# --- TensorFlow / Keras backends: DeepPipe, MFF-CNN-LightGBM ---
+# Time of writing: tensorflow 2.21.0 bundles Keras 3.x. The GPU path for the
+# cuDNN LSTM in DeepPipe is NOT usable on every driver/CUDA combination; on such
+# machines set CUDA_VISIBLE_DEVICES="" and expect CPU-only training to be slow.
+tensorflow==2.21.0
+keras==3.14.1
+
+# --- LightGBM: MFF-CNN-LightGBM (and the LightGBM head inside DeepPipe) ---
+lightgbm==4.6.0
+
+# --- DeepPipeNet oversampling ---
+imbalanced-learn==0.14.1
+
+# --- Shared numerical stack; keep consistent with requirements-pinned.txt ---
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.13.1
+torch==2.5.1
+
+# --- Only for regenerating the paper's SHAP figures from the shipped cache ---
+shap==0.51.0
+matplotlib==3.9.0
+
+# Platform notes
+# --------------
+# * Recorded on Linux x86_64 (glibc >= 2.35) with Python 3.12.3.
+# * torch 2.5.1 is published for cp312 on Linux; the checkpoint files load with
+#   `weights_only=True` on CPU, so no GPU is required for inference.
+# * tensorflow 2.21.0 requires Python >= 3.10. Do not mix two TensorFlow builds in
+#   one environment; DeepPipe and MFF-CNN-LightGBM both import it.
+# * SMDPSO-SVM needs only scikit-learn + numpy + pandas, but its PSO search is the
+#   slowest single job in the package (~5 min in the reduced profile, hours in the
+#   full profile). See its FIX_NOTES.md before changing the profile.

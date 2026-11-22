@@ -1,0 +1,66 @@
+{
+  "description": "Publication color-palette definitions for TreeSHAP Figure 3 (class-feature importance heatmap) and Figure 4 (instance-level SHAP panels).",
+  "reference_A_aggregated_heatmap": {
+    "figure_role": "Figure 3: 6 classes x 13 features 2D TreeSHAP heatmap palette and layout specification.",
+    "color_stops_low_to_high": [
+      {
+        "value": 0.0,
+        "hex": "#083465",
+        "meaning": "navy blue (lower bound)"
+      },
+      {
+        "value": 0.24,
+        "hex": "#5797BD",
+        "meaning": "muted medium blue"
+      },
+      {
+        "value": 0.5,
+        "hex": "#F4F4F4",
+        "meaning": "near white"
+      },
+      {
+        "value": 0.75,
+        "hex": "#E9A794",
+        "meaning": "salmon"
+      },
+      {
+        "value": 1.0,
+        "hex": "#6D0420",
+        "meaning": "burgundy red (upper bound)"
+      }
+    ],
+    "colorbar": "right side, High at top, Low at bottom; represents mean absolute TreeSHAP magnitude"
+  },
+  "reference_B_sample_panels": {
+    "figure_role": "Figure 4: Six-class instance-level TreeSHAP 2x3 panel layout and color scale specification.",
+    "color_stops_low_to_high": [
+      {
+        "value": 0.0,
+        "hex": "#3CA7FE",
+        "meaning": "bright cyan blue (lower bound)"
+      },
+      {
+        "value": 0.25,
+        "hex": "#C8E5FE",
+        "meaning": "pale blue"
+      },
+      {
+        "value": 0.5,
+        "hex": "#FFFFFF",
+        "meaning": "white"
+      },
+      {
+        "value": 0.75,
+        "hex": "#FFD7E5",
+        "meaning": "pale pink"
+      },
+      {
+        "value": 1.0,
+        "hex": "#FB0052",
+        "meaning": "hot pink-red (upper bound)"
+      }
+    ],
+    "colorbar": "right side, High at top, Low at bottom; scaled to underlying signed/normalized SHAP plot values"
+  },
+  "notes": "Color-palette configuration only; all numerical values are computed directly from the archived SHAP summaries and per_sample_shap_6417.npz."
+}

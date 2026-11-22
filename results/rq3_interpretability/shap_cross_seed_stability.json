@@ -1,0 +1,46 @@
+{
+  "spearman_seed42_vs_seed123": {
+    "rho": 0.9945054945054945,
+    "p": 3.909411051466979e-12
+  },
+  "spearman_seed42_vs_seed456": {
+    "rho": 0.9835164835164836,
+    "p": 1.611214573209521e-09
+  },
+  "spearman_seed123_vs_seed456": {
+    "rho": 0.9780219780219779,
+    "p": 7.757814031393615e-09
+  },
+  "top5_overlap_seed42_123": 5,
+  "top5_overlap_seed42_456": 5,
+  "top5_overlap_seed123_456": 5,
+  "top5_sets": {
+    "42": [
+      "ACCIDENT_PSIG",
+      "PIPE_COATING_TYPE",
+      "PIPE_SEAM_TYPE",
+      "PIPE_TYPE",
+      "PRESSURE_RATIO"
+    ],
+    "123": [
+      "ACCIDENT_PSIG",
+      "PIPE_COATING_TYPE",
+      "PIPE_SEAM_TYPE",
+      "PIPE_TYPE",
+      "PRESSURE_RATIO"
+    ],
+    "456": [
+      "ACCIDENT_PSIG",
+      "PIPE_COATING_TYPE",
+      "PIPE_SEAM_TYPE",
+      "PIPE_TYPE",
+      "PRESSURE_RATIO"
+    ]
+  },
+  "top1_feature_each_seed": {
+    "42": "PIPE_COATING_TYPE",
+    "123": "PIPE_COATING_TYPE",
+    "456": "PIPE_COATING_TYPE"
+  },
+  "note": "Cross-seed stability measures feature-ranking consistency across random seeds of the same CatBoost backbone."
+}

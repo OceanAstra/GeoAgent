@@ -1,0 +1,31 @@
+# Pinned environment for GeoAgent verification, frozen inference and the P23 replay.
+#
+# Verified on 2026-11-21 by installing this list into a brand-new virtual environment
+# (Python 3.12.3, Linux x86_64, glibc 2.35). See docs/DEPENDENCY_NOTES.md for the exact
+# transcript and for what the fresh-environment run does NOT prove.
+#
+#   python3.12 -m venv .venv && . .venv/bin/activate
+#   python -m pip install -r reproduce/requirements-pinned.txt
+#
+# CPU-only machines: torch==2.5.1 resolves to the ~2 GB CUDA build. Install the CPU wheel
+# instead and keep every other pin unchanged:
+#
+#   python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.5.1+cpu"
+#
+# scikit-learn 1.6.1 is NOT optional: the P22 .joblib heads were pickled by 1.6.1 and
+# fail to deserialize on 1.8.x. Frozen .joblib/.pt files must only be loaded from a
+# trusted source.
+
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.13.1
+joblib==1.4.2
+catboost==1.2.10
+torch==2.5.1
+openpyxl==3.1.5
+
+# Used only to regenerate the paper figures from the archived SHAP cache.
+# Not needed to run any check in this package.
+# shap==0.51.0
+# matplotlib==3.9.0

@@ -1,0 +1,39 @@
+[
+  {
+    "window": "2025",
+    "n": 542,
+    "base_OP_rows": 20,
+    "true_ED_among_base_OP": 12,
+    "other_true_classes_among_base_OP": {
+      "OPERATIONAL": 4,
+      "OTHER": 2,
+      "CORROSION": 1,
+      "EQUIPMENT_FAILURE": 1
+    },
+    "full_agent_flips": 12,
+    "flips_all_true_ED": true
+  },
+  {
+    "window": "2026",
+    "n": 40,
+    "base_OP_rows": 2,
+    "true_ED_among_base_OP": 2,
+    "other_true_classes_among_base_OP": {},
+    "full_agent_flips": 2,
+    "flips_all_true_ED": true
+  },
+  {
+    "window": "ALL",
+    "n": 582,
+    "base_OP_rows": 22,
+    "true_ED_among_base_OP": 14,
+    "other_true_classes_among_base_OP": {
+      "OPERATIONAL": 4,
+      "OTHER": 2,
+      "CORROSION": 1,
+      "EQUIPMENT_FAILURE": 1
+    },
+    "full_agent_flips": 14,
+    "flips_all_true_ED": true
+  }
+]

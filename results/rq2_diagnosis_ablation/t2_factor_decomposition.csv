@@ -1,0 +1,5 @@
+factor,level,comparison,d_acc_pt,d_macro_f1_pt,d_w_f1_pt,d_hard_f1_pt
+Head effect (Dual-view head: with - without),Single-seed backbone,ABL_B − A_single,-0.0312,0.6938,0.2567,1.6092
+Head effect (Dual-view head: with - without),3-seed ensemble backbone,P_no_proto − A_ensemble,0.1403,0.7983,0.4043,1.8533
+Backbone effect (Ensemble - Single),With dual-view head,P_no_proto − ABL_B,0.4208,0.5413,0.3953,1.0505
+Backbone effect (Ensemble - Single),Without dual-view head,A_ensemble − A_single,0.2493,0.4368,0.2478,0.8063

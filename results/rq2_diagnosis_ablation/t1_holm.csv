@@ -1,0 +1,3 @@
+comparison_id,comparison,mcnemar_p,holm_p_mcnemar,reject_mcnemar_0p05,group_permutation_p,holm_p_group_perm,reject_groupperm_0p05,net,direction,acc_ci95,macro_f1_ci95
+C1,P_no_proto vs A_ensemble,0.33555761823401514,0.6711152364680303,False,0.33715,0.6743,False,9,P_no_proto vs A_ensemble: net 9 (39 corrected / 30 harmed),"[-0.00109, 0.00390]","[0.00325, 0.01350]"
+C2,P_no_proto vs F_concat,0.5600646295802107,0.6711152364680303,False,0.56185,0.6743,False,5,P_no_proto vs F_concat: net 5 (26 corrected / 21 harmed),"[-0.00140, 0.00281]","[0.00076, 0.00678]"

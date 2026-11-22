@@ -1,0 +1,46 @@
+{
+  "_about": "Per-baseline record of the adaptation fixes applied before the archived results were produced. The historical 'patch2.diff' files were generated on the authors' build machine and are NOT part of this release; the fix descriptions below are carried by each baseline's FIX_NOTES.md, and the adapted sources in this directory are the authoritative record of the final state. n_diff_lines is the historical diff size recorded when the patch was applied and is kept for provenance only.",
+  "_release_note_20261121": "Release maintenance (2026-11-21) additionally (a) resolved the default baseline input directory so a fresh clone finds experiments/baselines_8_adapted/data/baseline_data_13d without setting RQ1_DATA_DIR, and (b) added weights_only=True to checkpoint loading. Both are documented in FIX_NOTES.md and docs/BASELINES_AND_PROTOCOL.md. Neither changes data, splits, features, hyper-parameters or decision rules.",
+  "baselines": {
+    "AUTDL": {
+      "n_diff_lines": 17,
+      "fix_notes": "code/baselines_fixed/AUTDL/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "DeepPipeNet": {
+      "n_diff_lines": 18,
+      "fix_notes": "code/baselines_fixed/DeepPipeNet/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "SART-1DCNN": {
+      "n_diff_lines": 37,
+      "fix_notes": "code/baselines_fixed/SART-1DCNN/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "CIC": {
+      "n_diff_lines": 12,
+      "fix_notes": "code/baselines_fixed/CIC/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "1DCNN-DBO-LSTM": {
+      "n_diff_lines": 42,
+      "fix_notes": "code/baselines_fixed/1DCNN-DBO-LSTM/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "MFF-CNN-LightGBM": {
+      "n_diff_lines": 12,
+      "fix_notes": "code/baselines_fixed/MFF-CNN-LightGBM/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "DeepPipe": {
+      "n_diff_lines": 12,
+      "fix_notes": "code/baselines_fixed/DeepPipe/FIX_NOTES.md",
+      "patch2_diff": null
+    },
+    "SMDPSO-SVM": {
+      "n_diff_lines": 48,
+      "fix_notes": "code/baselines_fixed/SMDPSO-SVM/FIX_NOTES.md",
+      "patch2_diff": null
+    }
+  }
+}

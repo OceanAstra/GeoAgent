@@ -1,0 +1,5 @@
+arm,backbone,head,deploy_catboost_models,pipeline_catboost_fits,backbone_sec,head_sec,total_sec,measured_in,note
+P_no_proto (FULL),CatBoost x 3,Rule+Neural dual-view head,3,12,245.36,4.5,249.86,Tier 1,12 fits = 3 full-fit models + 3 folds x 3 seeds OOF; shared with A_ensemble
+A_ensemble (ABL-A),CatBoost x 3,None,3,12,245.36,0.0,245.36,Tier 1,Shares backbone training with FULL (no residual head at inference)
+ABL-B,CatBoost x 1 (seed 42),Rule+Neural dual-view head,1,4,60.46,6.24,66.7,Tier 2,3 single-seed OOF fold fits + residual head training; full-fit cb_seed42.cbm reused from Tier 1
+A_single,CatBoost x 1 (seed 42),None,1,1,,0.0,,Tier 1 (seed 42 member of shared backbone; not timed separately),Requires 1 CatBoost at inference; reused from shared backbone without separate timing

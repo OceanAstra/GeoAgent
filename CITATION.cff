@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use the GeoAgent code, please cite this repository. Add the final manuscript citation after publication."
+title: "GeoAgent: Research Code for Towards Interpretable Agent-Based Oil Pipeline Anomaly Detection"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Hualiang
+  - family-names: Yang
+    given-names: Bin
+  - family-names: Nie
+    given-names: Liming
+  - family-names: Deng
+    given-names: Yuxuan
+  - family-names: Dong
+    given-names: Longlong
+  - family-names: Wang
+    given-names: Xiaodong

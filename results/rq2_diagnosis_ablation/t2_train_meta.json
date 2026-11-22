@@ -1,0 +1,160 @@
+{
+  "verification": {
+    "manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a",
+    "source_fidelity": {
+      "g2_common.py": {
+        "local_sha256": "842217739ba315b85b6a5a9aa88d4cbde13c9871487a71be61424bcf4589abfa",
+        "official_sha256": "842217739ba315b85b6a5a9aa88d4cbde13c9871487a71be61424bcf4589abfa",
+        "identical": true
+      },
+      "rq2_ablation_net.py": {
+        "local_sha256": "ca20fc6ff9b4fecd5e9e37bba3f6c282af346617355232e2096a924543a3269b",
+        "official_sha256": "ca20fc6ff9b4fecd5e9e37bba3f6c282af346617355232e2096a924543a3269b",
+        "identical": true
+      },
+      "s2_common.py": {
+        "local_sha256": "a3f7f7cd334e38c959a45b68cb6c46fe4f5352273d047bcefc08bf9619e000d3",
+        "official_sha256": "a3f7f7cd334e38c959a45b68cb6c46fe4f5352273d047bcefc08bf9619e000d3",
+        "identical": true
+      },
+      "s2_heads.py": {
+        "local_sha256": "ebf5975362cad35afbb0774f727d8aa32e27d69a933d057dc2bce25a95b299c1",
+        "official_sha256": "ebf5975362cad35afbb0774f727d8aa32e27d69a933d057dc2bce25a95b299c1",
+        "identical": true
+      }
+    },
+    "role_isolation": true,
+    "backbone_reuse_matches_tier1_A_single": {
+      "max_abs_diff": 1.1102230246251565e-16,
+      "source": "../GeOAD_ReEval_Run_20261028_Tier1/artifacts/cb_seed42.cbm",
+      "source_sha256": "f6e3e61e7abf30169363c802d95880c374b0116219d434c353a6fb11cb39bcb8"
+    },
+    "single_seed_oof": {
+      "n_folds": 3,
+      "cv_seed": 42,
+      "fold_sizes": [
+        [
+          19968,
+          9973
+        ],
+        [
+          19955,
+          9986
+        ],
+        [
+          19959,
+          9982
+        ]
+      ],
+      "rows_validated_once": true,
+      "fold_group_overlap": 0,
+      "oof_vs_insample_median_maxdiff": 0.029088998632044727,
+      "oof_vs_insample_min_maxdiff": 3.154664243090765e-05
+    },
+    "oof_differs_from_tier1_ensemble_oof": {
+      "max_abs_diff": 0.27294070735523623
+    },
+    "head_structure_identical_to_full": {
+      "active_params": 583,
+      "n_params": 903,
+      "reference": "Tier1 P_no_proto (FULL)"
+    },
+    "proto_view_structurally_removed": {
+      "w_proto_max_abs_change": 0.0
+    }
+  },
+  "config": {
+    "arm": "ABL-B: Single CatBoost (seed 42) backbone + Rule/Neural dual-view residual head",
+    "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+    "protocol_lock_sha256": "c90cd2ab44b28d8a1c444cdd79b3641ec4c250ed79b62252c225a2848653ef6c",
+    "data_manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a",
+    "feature_set": "MAIN_13",
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ],
+    "class_order": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "split_roles": {
+      "fit_rows": 29941,
+      "calib_rows": 6411,
+      "dev_confirm_rows": 6417
+    },
+    "backbone": {
+      "source": "Tier1 cb_seed42.cbm (frozen reuse)",
+      "seed": 42,
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "oof_source": "Single-seed 3-fold group-isolated OOF predictions",
+      "reuse_check_max_abs_diff_vs_tier1_A_single": 1.1102230246251565e-16
+    },
+    "head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "drop": "proto",
+      "mode": "retrain",
+      "trainer": "rq2_ablation_net.train_p_arm_masked (identical trainer to FULL)",
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "n_params": 903,
+      "active_params": 583,
+      "selected_epochs": [
+        0,
+        0,
+        0
+      ],
+      "calib_macro_f1": [
+        0.5879,
+        0.5882,
+        0.5872
+      ],
+      "weights": "artifacts/ABL_B_head_seed{42,123,456}.pt"
+    },
+    "prob_aggregation": "3-seed softmax probability mean (identical aggregation to FULL)",
+    "training_cost": {
+      "backbone_reuse_sec": 0.03,
+      "single_seed_oof_sec": 60.46,
+      "head_sec": 6.24,
+      "total_sec": 68.59,
+      "catboost_fits_this_round": 3,
+      "note": "Full-fit backbone reused frozen; 3 OOF fold models fitted for seed 42"
+    },
+    "zero_training_reuse": [
+      "A_single",
+      "A_ensemble",
+      "F_concat",
+      "P_no_proto"
+    ]
+  },
+  "timing": {
+    "backbone_reuse_sec": 0.03,
+    "single_seed_oof_sec": 60.46,
+    "head_sec": 6.24,
+    "total_sec": 68.59,
+    "catboost_fits_this_round": 3,
+    "note": "Full-fit backbone reused frozen; 3 OOF fold models fitted for seed 42"
+  },
+  "prediction_files": [
+    "predictions/ABL_B.csv",
+    "predictions/calib/ABL_B.csv"
+  ]
+}

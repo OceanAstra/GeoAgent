@@ -1,0 +1,147 @@
+table,data_source,cause_field,raw_value,official_section,official_term,label,label_status,rule_id,authority,n_rows
+official_code25,(all 2002-2009 sources),CAUSE,1,H1 CORROSION,External Corrosion,CORROSION,mapped,code25_1,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,2,H1 CORROSION,Internal Corrosion,CORROSION,mapped,code25_2,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,3,H2 NATURAL_FORCES,Earth Movement,NATURAL_FORCE,out_of_scope,code25_3,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,4,H2 NATURAL_FORCES,Lightning,NATURAL_FORCE,out_of_scope,code25_4,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,5,H2 NATURAL_FORCES,Heavy Rains/Floods,NATURAL_FORCE,out_of_scope,code25_5,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,6,H2 NATURAL_FORCES,Temperature,NATURAL_FORCE,out_of_scope,code25_6,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,7,H2 NATURAL_FORCES,High Winds,NATURAL_FORCE,out_of_scope,code25_7,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,8,H3 EXCAVATION_DAMAGE,Operator Excavation Damage,EXTERNAL_DAMAGE,mapped,code25_8,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,9,H3 EXCAVATION_DAMAGE,Third Party Excavation,EXTERNAL_DAMAGE,mapped,code25_9,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,10,H4 OTHER_OUTSIDE_FORCE,Fire/Explosion as primary cause of failure,EXTERNAL_DAMAGE,mapped,code25_10,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,11,H4 OTHER_OUTSIDE_FORCE,"Car, truck or other vehicle",EXTERNAL_DAMAGE,mapped,code25_11,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,12,H4 OTHER_OUTSIDE_FORCE,Rupture of Previously Damaged Pipe,AMBIGUOUS,ambiguous,code25_12,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,13,H4 OTHER_OUTSIDE_FORCE,Vandalism,EXTERNAL_DAMAGE,mapped,code25_13,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,14,H5 MATERIAL_WELD,Body of Pipe,MATERIAL_DEFECT,mapped,code25_14,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,15,H5 MATERIAL_WELD,Component (Valve/Fitting/Vessel/Extruded Outlet),AMBIGUOUS,ambiguous,code25_15,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,16,H5 MATERIAL_WELD,Joint,MATERIAL_DEFECT,mapped,code25_16,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,17,H5 MATERIAL_WELD,Butt,MATERIAL_DEFECT,mapped,code25_17,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,18,H5 MATERIAL_WELD,Fillet,MATERIAL_DEFECT,mapped,code25_18,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,19,H5 MATERIAL_WELD,Pipe Seam,MATERIAL_DEFECT,mapped,code25_19,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,20,H6 EQUIPMENT,Malfunction of Control/Relief Equipment,EQUIPMENT_FAILURE,mapped,code25_20,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,21,H6 EQUIPMENT,"Threads Stripped, Broken Pipe Coupling",EQUIPMENT_FAILURE,mapped,code25_21,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,22,H6 EQUIPMENT,Seal Failure,EQUIPMENT_FAILURE,mapped,code25_22,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,23,H7 INCORRECT_OPERATION,Incorrect Operation,OPERATIONAL,mapped,code25_23,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,24,H8 OTHER,Miscellaneous,OTHER,mapped,code25_24,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_code25,(all 2002-2009 sources),CAUSE,25,H8 UNKNOWN,Unknown,UNKNOWN,unknown,code25_25,Form RSPA F 7000-1 (01-2001) Part H; F 7100.1 Rev 03-2004; F 7100.2 01-2002 (sections H1-H8),
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,CORROSION,CORROSION,CORROSION,CORROSION,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,CORROSION FAILURE,CORROSION,CORROSION FAILURE,CORROSION,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,NATURAL FORCES,NATURAL_FORCE,NATURAL FORCES,NATURAL_FORCE,out_of_scope,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,NATURAL FORCE DAMAGE,NATURAL_FORCE,NATURAL FORCE DAMAGE,NATURAL_FORCE,out_of_scope,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,EXCAVATION DAMAGE,EXTERNAL_DAMAGE,EXCAVATION DAMAGE,EXTERNAL_DAMAGE,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,OTHER OUTSIDE FORCE DAMAGE,EXTERNAL_DAMAGE,OTHER OUTSIDE FORCE DAMAGE,EXTERNAL_DAMAGE,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,MATERIAL AND/OR WELD FAILURES,MATERIAL_DEFECT,MATERIAL AND/OR WELD FAILURES,MATERIAL_DEFECT,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,MATERIAL FAILURE OF PIPE OR WELD,MATERIAL_DEFECT,MATERIAL FAILURE OF PIPE OR WELD,MATERIAL_DEFECT,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,EQUIPMENT,EQUIPMENT_FAILURE,EQUIPMENT,EQUIPMENT_FAILURE,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,EQUIPMENT FAILURE,EQUIPMENT_FAILURE,EQUIPMENT FAILURE,EQUIPMENT_FAILURE,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,INCORRECT OPERATION,OPERATIONAL,INCORRECT OPERATION,OPERATIONAL,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,OTHER,OTHER,OTHER,OTHER,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+official_general8,(2010+ & 2002-2009),CAUSE / GEN_CAUSE_TXT / CAUSE_TEXT,OTHER ACCIDENT CAUSE,OTHER,OTHER ACCIDENT CAUSE,OTHER,mapped,general8,F7000-1 Part A cause check-box group (8 categories); identical category set in F 7100.1 / F 7100.2,
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,170.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,247.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,13.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,51.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,MATERIAL FAILURE OF PIPE OR WELD,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,18.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,9.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,OTHER ACCIDENT CAUSE,,,OTHER,mapped,general8,per-source official field dictionary,17.0
+observed,accident_gravity_reporting_regulated_jul2020_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,7.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,CORROSION,,,CORROSION,mapped,caus_1986,per-source official field dictionary,788.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,FAILED PIPE,,,AMBIGUOUS,ambiguous,caus_failed_pipe_unresolved,per-source official field dictionary,150.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,FAILED PIPE,,,CORROSION,mapped,caus_failed_pipe_causo_corrosion,per-source official field dictionary,6.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,FAILED PIPE,,,EXTERNAL_DAMAGE,mapped,caus_failed_pipe_causo_outside,per-source official field dictionary,14.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,FAILED PIPE,,,NATURAL_FORCE,out_of_scope,caus_failed_pipe_causo_natural,per-source official field dictionary,5.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,FAILED WELD,,,MATERIAL_DEFECT,mapped,caus_1986,per-source official field dictionary,141.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,INCORRECT OPERATION BY OPERATOR PERSONNEL,,,OPERATIONAL,mapped,caus_1986,per-source official field dictionary,201.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,MALFUNCTION OF CONTROL OR RELIEF EQUIPMENT,,,EQUIPMENT_FAILURE,mapped,caus_1986,per-source official field dictionary,152.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,OTHER,,,OTHER,mapped,caus_1986,per-source official field dictionary,841.0
+observed,accident_hazardous_liquid_1986_jan2002,CAUS,OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,caus_1986,per-source official field dictionary,796.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,CORROSION,,,CORROSION,mapped,general8,per-source official field dictionary,692.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,EQUIPMENT,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,1041.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,183.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,322.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,MATERIAL AND/OR WELD FAILURES,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,382.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,NATURAL FORCES,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,162.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,OTHER,,,OTHER,mapped,general8,per-source official field dictionary,169.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,75.0
+observed,accident_hazardous_liquid_jan2002_dec2009,GEN_CAUSE_TXT,,,,UNKNOWN,unknown,cause_empty,per-source official field dictionary,4.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,1273.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,2675.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,193.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,813.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,MATERIAL FAILURE OF PIPE OR WELD,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,393.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,256.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,OTHER ACCIDENT CAUSE,,,OTHER,mapped,general8,per-source official field dictionary,124.0
+observed,accident_hazardous_liquid_jan2010_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,123.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,CORROSION,,,CORROSION,mapped,primary_cause_text,per-source official field dictionary,1554.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,DEFECTIVE PIPE,,,MATERIAL_DEFECT,mapped,primary_cause_text,per-source official field dictionary,233.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,DEFECTIVE WELD,,,MATERIAL_DEFECT,mapped,primary_cause_text,per-source official field dictionary,192.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,EQUIPMENT RUPTURING LINE,,,EQUIPMENT_FAILURE,mapped,primary_cause_text,per-source official field dictionary,1294.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,INCORRECT OPERATION BY CARRIER PERSONNEL,,,OPERATIONAL,mapped,primary_cause_text,per-source official field dictionary,273.0
+observed,accident_hazardous_liquid_pre1986,PRIMARY_CAUSE_TEXT,OTHER,,,OTHER,mapped,primary_cause_text,per-source official field dictionary,1187.0
+observed,incident_gas_distribution_1970_mid1984,CAUSE_IDENTIFIER,CONSTRUCTION DEFECT/MATERIAL FAILURE,,,MATERIAL_DEFECT,mapped,cause_identifier,per-source official field dictionary,1349.0
+observed,incident_gas_distribution_1970_mid1984,CAUSE_IDENTIFIER,CORROSION,,,CORROSION,mapped,cause_identifier,per-source official field dictionary,1499.0
+observed,incident_gas_distribution_1970_mid1984,CAUSE_IDENTIFIER,DAMAGE BY OUTSIDE FORCES,,,EXTERNAL_DAMAGE,mapped,cause_identifier,per-source official field dictionary,9087.0
+observed,incident_gas_distribution_1970_mid1984,CAUSE_IDENTIFIER,DAMAGE BY OUTSIDE FORCES,,,NATURAL_FORCE,out_of_scope,cause_leak_earth_movement,per-source official field dictionary,1168.0
+observed,incident_gas_distribution_1970_mid1984,CAUSE_IDENTIFIER,OTHER,,,OTHER,mapped,cause_identifier,per-source official field dictionary,1508.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,36.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,61.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,534.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,112.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,111.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,OTHER INCIDENT CAUSE,,,AMBIGUOUS,ambiguous,general8_unlisted,per-source official field dictionary,123.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,471.0
+observed,incident_gas_distribution_jan2010_present,CAUSE,"PIPE, WELD, OR JOINT FAILURE",,,AMBIGUOUS,ambiguous,general8_unlisted,per-source official field dictionary,102.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,CORROSION,,,CORROSION,mapped,general8,per-source official field dictionary,18.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,EQUIPMENT,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,20.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,303.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,30.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,MATERIAL AND/OR WELD FAILURES,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,42.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,NATURAL FORCES,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,76.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,OTHER,,,OTHER,mapped,general8,per-source official field dictionary,106.0
+observed,incident_gas_distribution_mar2004_dec2009,CAUSE_TEXT,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,300.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,ACCIDENTALLY CAUSED BY OPERATOR,,,OPERATIONAL,mapped,cause_mid1984,per-source official field dictionary,117.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,CONSTRUCTION/OPERATING ERROR,,,AMBIGUOUS,ambiguous,caus_mid1984_construction_or_operating,per-source official field dictionary,168.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,CORROSION,,,CORROSION,mapped,cause_mid1984,per-source official field dictionary,115.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,DAMAGE BY OUTSIDE FORCES,,,EXTERNAL_DAMAGE,mapped,cause_mid1984,per-source official field dictionary,1705.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,OTHER,,,OTHER,mapped,cause_mid1984,per-source official field dictionary,727.0
+observed,incident_gas_distribution_mid1984_feb2004,CAUSE,,,,UNKNOWN,unknown,cause_empty,per-source official field dictionary,9.0
+observed,incident_gas_transmission_gathering_1970_mid1984,CAUSE_IDENTIFIER,CONSTRUCTION DEFECT/MATERIAL FAILURE,,,MATERIAL_DEFECT,mapped,cause_identifier,per-source official field dictionary,2970.0
+observed,incident_gas_transmission_gathering_1970_mid1984,CAUSE_IDENTIFIER,CORROSION,,,CORROSION,mapped,cause_identifier,per-source official field dictionary,1256.0
+observed,incident_gas_transmission_gathering_1970_mid1984,CAUSE_IDENTIFIER,DAMAGE BY OUTSIDE FORCES,,,EXTERNAL_DAMAGE,mapped,cause_identifier,per-source official field dictionary,2767.0
+observed,incident_gas_transmission_gathering_1970_mid1984,CAUSE_IDENTIFIER,DAMAGE BY OUTSIDE FORCES,,,NATURAL_FORCE,out_of_scope,cause_leak_earth_movement,per-source official field dictionary,419.0
+observed,incident_gas_transmission_gathering_1970_mid1984,CAUSE_IDENTIFIER,OTHER,,,OTHER,mapped,cause_identifier,per-source official field dictionary,452.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,CORROSION,,,CORROSION,mapped,general8,per-source official field dictionary,267.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,EQUIPMENT,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,86.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,150.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,27.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,MATERIAL AND/OR WELD FAILURES,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,150.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,NATURAL FORCES,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,148.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,OTHER,,,OTHER,mapped,general8,per-source official field dictionary,108.0
+observed,incident_gas_transmission_gathering_2002_dec2009,CAUSE_TEXT,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,93.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,397.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,683.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,217.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,133.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,MATERIAL FAILURE OF PIPE OR WELD,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,216.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,148.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,OTHER INCIDENT CAUSE,,,AMBIGUOUS,ambiguous,general8_unlisted,per-source official field dictionary,88.0
+observed,incident_gas_transmission_gathering_jan2010_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,114.0
+observed,incident_gas_transmission_gathering_mid1984_2001,CAUSE,CONSTRUCTION/MATERIAL DEFECT,,,MATERIAL_DEFECT,mapped,cause_mid1984,per-source official field dictionary,210.0
+observed,incident_gas_transmission_gathering_mid1984_2001,CAUSE,CORROSION,,,CORROSION,mapped,cause_mid1984,per-source official field dictionary,359.0
+observed,incident_gas_transmission_gathering_mid1984_2001,CAUSE,DAMAGE BY OUTSIDE FORCE,,,EXTERNAL_DAMAGE,mapped,cause_mid1984,per-source official field dictionary,591.0
+observed,incident_gas_transmission_gathering_mid1984_2001,CAUSE,OTHER,,,OTHER,mapped,cause_mid1984,per-source official field dictionary,342.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,1.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,24.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,14.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,MATERIAL FAILURE OF PIPE OR WELD,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,3.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,2.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,OTHER INCIDENT CAUSE,,,AMBIGUOUS,ambiguous,general8_unlisted,per-source official field dictionary,5.0
+observed,incident_liquefied_natural_gas_jan2011_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,1.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,CORROSION FAILURE,,,CORROSION,mapped,general8,per-source official field dictionary,36.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,EQUIPMENT FAILURE,,,EQUIPMENT_FAILURE,mapped,general8,per-source official field dictionary,18.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,EXCAVATION DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,6.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,INCORRECT OPERATION,,,OPERATIONAL,mapped,general8,per-source official field dictionary,13.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,MATERIAL FAILURE OF PIPE OR WELD,,,MATERIAL_DEFECT,mapped,general8,per-source official field dictionary,5.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,NATURAL FORCE DAMAGE,,,NATURAL_FORCE,out_of_scope,general8,per-source official field dictionary,10.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,OTHER INCIDENT CAUSE,,,AMBIGUOUS,ambiguous,general8_unlisted,per-source official field dictionary,9.0
+observed,incident_type_r_reporting_regulated_gas_gathering_may2022_present,CAUSE,OTHER OUTSIDE FORCE DAMAGE,,,EXTERNAL_DAMAGE,mapped,general8,per-source official field dictionary,2.0

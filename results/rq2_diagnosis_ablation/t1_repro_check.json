@@ -1,0 +1,26 @@
+{
+  "arms": {
+    "A_single": {
+      "max_abs_prob_diff": 0.0,
+      "prediction_agreement": 1.0,
+      "bitwise_identical": true
+    },
+    "A_ensemble": {
+      "max_abs_prob_diff": 0.0,
+      "prediction_agreement": 1.0,
+      "bitwise_identical": true
+    },
+    "F_concat": {
+      "max_abs_prob_diff": 0.0,
+      "prediction_agreement": 1.0,
+      "bitwise_identical": true
+    },
+    "P_no_proto": {
+      "max_abs_prob_diff": 0.0,
+      "prediction_agreement": 1.0,
+      "bitwise_identical": true
+    }
+  },
+  "note": "Reproduction check verified row-by-row against archived development predictions.",
+  "all_passed": true
+}

@@ -1,0 +1,14 @@
+abbreviation,feature,expansion,role,column_index_in_model
+D,PIPE_DIAMETER,Diameter,numeric,0
+WT,PIPE_WALL_THICKNESS,Wall thickness,numeric,1
+SMYS,PIPE_SMYS,Specified min. yield strength,numeric,2
+PS,PIPE_SPECIFICATION,Pipe specification,categorical,3
+ST,PIPE_SEAM_TYPE,Seam type,categorical,4
+CT,PIPE_COATING_TYPE,Coating type,categorical,5
+PT,PIPE_TYPE,Pipe type,categorical,6
+AP,ACCIDENT_PSIG,Accident pressure,numeric,7
+MOP,MOP_PSIG,Max. operating pressure,numeric,8
+II,INTERNAL_INSPECTION_IND,Internal inspection,numeric,9
+PA,PIPE_AGE_AT_ACCIDENT,Pipe age,numeric,10
+MA,MANUFACTURE_AGE_AT_ACCIDENT,Manufacture age,numeric,11
+PR,PRESSURE_RATIO,Pressure ratio,numeric,12

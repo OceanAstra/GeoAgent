@@ -1,0 +1,23 @@
+{
+  "group_bootstrap": {
+    "method": "accident-group cluster bootstrap, percentile",
+    "reps": 20000,
+    "seed": 20261116,
+    "why": "the packaged scorer uses 1,000 group draws (rng default_rng(20261116)); with 20,000 draws the percentile endpoints converge to the archived values. Report both, with the rep count attached."
+  },
+  "mcnemar": {
+    "method": "exact binomial (two-sided) on discordant pairs"
+  },
+  "zero_harm_upper_bounds": {
+    "0_of_12": 0.2646,
+    "0_of_14": 0.2316,
+    "0_of_542": 0.0068,
+    "method": "Clopper-Pearson exact 95% upper bound",
+    "reading": "per-intervention harm rate is bounded above ~26%, NOT proven zero"
+  },
+  "legacy_ci_discrepancy": {
+    "archived_P23_2025_ci": "[+1.107, +3.506] pp (CHAMPION_DECISION.md, 542 groups, 2000 reps)",
+    "this_round_ci": "[+1.107, +3.506] pp at 20,000 reps and [+0.9225, +3.5055] pp at 1,000 reps (packaged scorer default); both exclude zero",
+    "note": "an earlier 2,000-rep run in this session returned [0.9225, 3.5055]; the grid effect is an artifact of few distinct group weights, not a data difference"
+  }
+}

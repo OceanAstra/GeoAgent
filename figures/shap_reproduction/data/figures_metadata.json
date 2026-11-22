@@ -1,0 +1,58 @@
+{
+  "figure_a": {
+    "source": "handoff shap_per_class_feature_importance.csv (mean of 3 seeds)",
+    "vmax": 1.3860027321796373,
+    "gamma": 0.5,
+    "classes": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "features": [
+      "PIPE_COATING_TYPE",
+      "PIPE_TYPE",
+      "PIPE_SEAM_TYPE",
+      "ACCIDENT_PSIG",
+      "PRESSURE_RATIO",
+      "PIPE_SPECIFICATION",
+      "MOP_PSIG",
+      "PIPE_AGE_AT_ACCIDENT",
+      "PIPE_DIAMETER",
+      "PIPE_WALL_THICKNESS",
+      "PIPE_SMYS",
+      "INTERNAL_INSPECTION_IND",
+      "MANUFACTURE_AGE_AT_ACCIDENT"
+    ]
+  },
+  "figure_b": {
+    "source": "frozen cb_seed42/123/456.cbm + dev_confirm manifest",
+    "symmetric_limit": 4.3,
+    "gamma": 0.5,
+    "shap_shape": [
+      6417,
+      13,
+      6
+    ],
+    "base_values": {
+      "CORROSION": 0.23837599601047033,
+      "EQUIPMENT_FAILURE": -2.163711503648529,
+      "EXTERNAL_DAMAGE": 1.6361771928019275,
+      "MATERIAL_DEFECT": 0.8952201627752858,
+      "OPERATIONAL": -1.5531277761732827,
+      "OTHER": 0.9470659282344994
+    },
+    "instance_counts": {
+      "CORROSION": 1166,
+      "EQUIPMENT_FAILURE": 660,
+      "EXTERNAL_DAMAGE": 2600,
+      "MATERIAL_DEFECT": 927,
+      "OPERATIONAL": 275,
+      "OTHER": 789
+    }
+  },
+  "font": "STIXGeneral",
+  "dpi": 600
+}

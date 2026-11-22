@@ -1,0 +1,10 @@
+policy,source_column,n,accuracy_pct,macro_f1_pct,changed,corrected,harmed,net
+KEEP,KEEP,542,61.81,35.64,0,0,0,0
+Full feedback-memory agent,P23_FEEDBACK_MEMORY,542,64.02,39.27,12,12,0,12
+Without class-pair memory,P23_NO_MEMORY,542,64.21,39.58,21,15,2,13
+Conditional-memory variant,P24_CONDITIONAL,542,63.84,38.99,11,11,0,11
+Fixed repair rule,P21_FIXED_RAW,542,62.73,37.3,23,12,7,5
+Ordinary feedback LogReg,ORDINARY_LOGREG,542,64.58,38.44,47,26,11,15
+Static value gate,STATIC_P22_CVG,542,62.73,37.42,34,13,8,5
+Equal-K confidence control,B0_CONFIDENCE_EQUAL_K,542,62.18,36.17,12,5,3,2
+Equal-K margin control,B1_MARGIN_EQUAL_K,542,63.1,38.28,12,9,2,7

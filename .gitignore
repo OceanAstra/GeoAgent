@@ -1,0 +1,33 @@
+# Local environments and Python runtime
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+*.log
+# Generated temporary experiments
+run_outputs/
+/tmp/
+outputs/local/
+# Secrets and internal server files
+.env
+.env.*
+!.env.example
+*credentials*
+*.pem
+*.key
+id_rsa*
+# Historical backups not for GitHub
+*Full_Handoff*.zip
+*Emergency_Full_Restore*.zip
+
+# Regenerable baseline datasets and figure outputs
+experiments/baselines_8_adapted/data/baseline_data_13d/
+experiments/baselines_8_adapted/data/baseline_data_9d/
+figures/shap_reproduction/generated/
+
+# Baseline training outputs (created at runtime by each train.py)
+experiments/baselines_8_adapted/code/baselines_fixed/*/result/
+experiments/baselines_8_adapted/code/baselines_fixed/*/log/
+experiments/geoad_code/artifacts/

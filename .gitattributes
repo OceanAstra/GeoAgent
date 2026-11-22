@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.cbm binary
+*.pt binary
+*.pth binary
+*.joblib binary
+*.npz binary
+*.pdf binary
+*.png binary

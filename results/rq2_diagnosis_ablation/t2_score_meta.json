@@ -1,0 +1,42 @@
+{
+  "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+  "n_dev_confirm": 6417,
+  "n_groups": 6373,
+  "arms": [
+    "P_no_proto",
+    "A_ensemble",
+    "ABL_B",
+    "A_single",
+    "F_concat"
+  ],
+  "ablation_rows": [
+    "P_no_proto",
+    "ABL-A",
+    "ABL-B",
+    "A_single"
+  ],
+  "reference_rows": [
+    "F_concat"
+  ],
+  "holm_family_acc": [
+    "E1",
+    "E2"
+  ],
+  "primary_pairs": [
+    "P_no_proto vs ABL_B",
+    "ABL_B vs A_single"
+  ],
+  "reference_pairs": [
+    "P_no_proto vs A_ensemble",
+    "A_ensemble vs A_single"
+  ],
+  "note": "R1 corresponds to Tier-1 C1 (already in Holm family {C1, C2}); listed for table completeness without double counting; see t2_macro_perm.py for Macro-F1 permutation tests",
+  "ci_method": "2,000 accident-group cluster bootstrap replicates (seed 42); Accuracy via exact McNemar + 20,000 group sign-flip permutations; Macro-F1 via 20,000 within-group swap permutations",
+  "zero_training_reuse": [
+    "A_single",
+    "A_ensemble",
+    "F_concat",
+    "P_no_proto"
+  ],
+  "seconds": 10.91
+}

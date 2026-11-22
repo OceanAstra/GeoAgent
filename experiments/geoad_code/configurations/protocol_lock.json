@@ -1,0 +1,170 @@
+{
+  "protocol_id": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+  "created_utc": "2026-10-25T08:05:39.453001+00:00",
+  "task_definition": "post-incident six-class cause diagnosis (not early warning)",
+  "data": {
+    "source": "GeOAD_Submission_Final_20261024/source_trace.csv",
+    "source_sha256": "2c5526ea06a1430ec609ebec2604f472639069b0404a1ed3f4f353614ad163fe",
+    "contract": "G1 data contract v1",
+    "main_rows": 43834,
+    "sealed_rows": 1065,
+    "dev_pool_rows": 42769,
+    "sealed_rule": "incident_year >= 2024 (pre-specified separation)"
+  },
+  "class_order": [
+    "CORROSION",
+    "EQUIPMENT_FAILURE",
+    "EXTERNAL_DAMAGE",
+    "MATERIAL_DEFECT",
+    "OPERATIONAL",
+    "OTHER"
+  ],
+  "features": {
+    "main_13": [
+      "PIPE_DIAMETER",
+      "PIPE_WALL_THICKNESS",
+      "PIPE_SMYS",
+      "PIPE_SPECIFICATION",
+      "PIPE_SEAM_TYPE",
+      "PIPE_COATING_TYPE",
+      "PIPE_TYPE",
+      "ACCIDENT_PSIG",
+      "MOP_PSIG",
+      "INTERNAL_INSPECTION_IND",
+      "PIPE_AGE_AT_ACCIDENT",
+      "MANUFACTURE_AGE_AT_ACCIDENT",
+      "PRESSURE_RATIO"
+    ],
+    "categorical": [
+      "PIPE_SPECIFICATION",
+      "PIPE_SEAM_TYPE",
+      "PIPE_COATING_TYPE",
+      "PIPE_TYPE"
+    ],
+    "numeric": [
+      "PIPE_DIAMETER",
+      "PIPE_WALL_THICKNESS",
+      "PIPE_SMYS",
+      "ACCIDENT_PSIG",
+      "MOP_PSIG",
+      "INTERNAL_INSPECTION_IND",
+      "PIPE_AGE_AT_ACCIDENT",
+      "MANUFACTURE_AGE_AT_ACCIDENT",
+      "PRESSURE_RATIO"
+    ],
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ]
+  },
+  "identity_rules": {
+    "base": "(DATA_SOURCE, native_id); unique within source implies one row per incident",
+    "R1": "Reused source IDs with distinct dates are separated into distinct accident groups (6 IDs / 12 rows)",
+    "R2": "Rows with OPERATOR_ID sharing (OPERATOR_ID, incident_date) are merged as the same incident",
+    "R3": "Rows without identifier metadata form singleton groups",
+    "R4": "Rows without OPERATOR_ID (63.9%) cannot be cross-source deduplicated (known limitation; no speculative merging)",
+    "operator_coverage_rows": 15841,
+    "operator_coverage_pct": 36.14,
+    "merged_keys": 289,
+    "merged_rows": 603,
+    "cross_source_merged_keys": 11
+  },
+  "split": {
+    "method": "StratifiedGroupKFold(n_splits=20, shuffle=True, random_state=20261024)",
+    "stratification": "6 cause classes x reporting-era strata",
+    "group_key": "accident_group (incident-level group isolation)",
+    "roles": {
+      "fit": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "calib": [
+        14,
+        15,
+        16
+      ],
+      "dev_confirm": [
+        17,
+        18,
+        19
+      ]
+    },
+    "role_usage": {
+      "fit": "Model fitting (CatBoost backbone + residual heads)",
+      "calib": "Used strictly for checkpoint selection (calib Macro-F1 argmax)",
+      "dev_confirm": "Development-confirmation evaluation split (not a blind test)"
+    }
+  },
+  "budgets": {
+    "catboost": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "threads": 16
+    },
+    "geoad_head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "backbone_residual": "log(clamp(cb, 1e-8)) + delta (retained across all arms)"
+    },
+    "f_head": "Linear(19->32)+ReLU+Linear(32->6), zero-initialized output, 838 parameters"
+  },
+  "analysis_plan": {
+    "primary_pairs": [
+      "P_full vs A_ensemble",
+      "P_full vs F_concat"
+    ],
+    "auxiliary_pairs": [
+      "P_full vs A_single",
+      "P_full vs P_no_proto",
+      "P_full vs P_no_rule",
+      "P_full vs P_no_neural"
+    ],
+    "multiplicity": "Holm correction across ablation comparisons",
+    "ci": "Accident-group cluster bootstrap 95% CI; exact paired McNemar for Accuracy",
+    "limitations": [
+      "dev_confirm is a development-confirmation split, not a blind test",
+      "13-D feature patterns may recur across splits (quantified)",
+      "63.9% of rows lack OPERATOR_ID for cross-source deduplication"
+    ]
+  },
+  "forbidden": [
+    "RQ1 eight adapted baselines evaluation",
+    "RQ3 TreeSHAP interpretability",
+    "external sealed test",
+    "new algorithm development",
+    "broad hyperparameter sweep",
+    "re-selecting splits after observing results"
+  ]
+}

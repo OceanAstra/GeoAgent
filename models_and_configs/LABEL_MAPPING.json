@@ -1,0 +1,14 @@
+{
+  "class_order": ["CORROSION", "EQUIPMENT_FAILURE", "EXTERNAL_DAMAGE",
+                  "MATERIAL_DEFECT", "OPERATIONAL", "OTHER"],
+  "class_index": {"CORROSION": 0, "EQUIPMENT_FAILURE": 1, "EXTERNAL_DAMAGE": 2,
+                  "MATERIAL_DEFECT": 3, "OPERATIONAL": 4, "OTHER": 5},
+  "display_name": {"CORROSION": "Corrosion", "EQUIPMENT_FAILURE": "Equipment Failure",
+                   "EXTERNAL_DAMAGE": "External Damage", "MATERIAL_DEFECT": "Material Defect",
+                   "OPERATIONAL": "Operational", "OTHER": "Other Causes"},
+  "task": "post-incident cause diagnosis on already-reported PHMSA pipeline incidents",
+  "not_a_task": ["real-time leak detection", "anomaly early warning", "incident localization"],
+  "mapping_file": "label_crosswalk_s2.csv",
+  "mapping_rules": 146,
+  "note": "Raw PHMSA CAUSE values are mapped per (source table, form revision) to one of six classes. Values that cannot be mapped with the official form dictionary are dropped with a recorded reason, never coerced to OTHER."
+}

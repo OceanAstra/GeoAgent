@@ -1,0 +1,3 @@
+comparison_id,comparison,mcnemar_p_acc,holm_p_acc_mcnemar,reject_acc_mcnemar_0p05,group_perm_p_acc,holm_p_acc_groupperm,reject_acc_groupperm_0p05,net,direction,acc_ci95,macro_f1_ci95
+E1,P_no_proto vs ABL_B,0.0050135989001463864,0.010027197800292773,True,0.0053,0.0106,True,27,P_no_proto vs ABL_B: net 27 (57 corrected / 30 harmed),"[0.00140, 0.00716]","[-0.00014, 0.01128]"
+E2,ABL_B vs A_single,0.9062943247030809,0.9062943247030809,False,0.9091,0.9091,False,-2,ABL_B vs A_single: net -2 (35 corrected / 37 harmed),"[-0.00296, 0.00219]","[0.00165, 0.01266]"

@@ -1,0 +1,25 @@
+row_id,data_source,accident_group,incident_year,PIPE_DIAMETER,PIPE_WALL_THICKNESS,PIPE_SMYS,PIPE_SPECIFICATION,PIPE_SEAM_TYPE,PIPE_COATING_TYPE,PIPE_TYPE,ACCIDENT_PSIG,MOP_PSIG,INTERNAL_INSPECTION_IND,PIPE_AGE_AT_ACCIDENT,MANUFACTURE_AGE_AT_ACCIDENT,PRESSURE_RATIO,fold
+accident_gravity_reporting_regulated_jul2020_present#239,accident_gravity_reporting_regulated_jul2020_present,AG043256,2023.0,4.0,,3.2,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#240,accident_gravity_reporting_regulated_jul2020_present,AG043257,2023.0,6.0,,0.01,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#264,accident_gravity_reporting_regulated_jul2020_present,AG043274,2023.0,4.5,,5.5,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#267,accident_gravity_reporting_regulated_jul2020_present,AG043275,2023.0,4.5,,0.01,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#268,accident_gravity_reporting_regulated_jul2020_present,AG043276,2023.0,1.0,,0.27,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#293,accident_gravity_reporting_regulated_jul2020_present,AG043294,2023.0,6.625,,38.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#297,accident_gravity_reporting_regulated_jul2020_present,AG043297,2023.0,8.0,,0.39,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE SEAM,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#299,accident_gravity_reporting_regulated_jul2020_present,AG043298,2023.0,8.0,,15.44,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#300,accident_gravity_reporting_regulated_jul2020_present,AG043298,2023.0,8.0,,15.44,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#301,accident_gravity_reporting_regulated_jul2020_present,AG043298,2023.0,8.0,,15.44,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#334,accident_gravity_reporting_regulated_jul2020_present,AG043316,2023.0,,,1.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#340,accident_gravity_reporting_regulated_jul2020_present,AG043320,2022.0,6.0,,3.2,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#343,accident_gravity_reporting_regulated_jul2020_present,AG043323,2022.0,,,1.6,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#345,accident_gravity_reporting_regulated_jul2020_present,AG043325,2022.0,,,8.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#347,accident_gravity_reporting_regulated_jul2020_present,AG043327,2022.0,0.25,,0.46,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#364,accident_gravity_reporting_regulated_jul2020_present,AG043341,2022.0,,,0.01,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#387,accident_gravity_reporting_regulated_jul2020_present,AG043358,2022.0,,,0.01,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#400,accident_gravity_reporting_regulated_jul2020_present,AG043365,2022.0,,,1.82,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#402,accident_gravity_reporting_regulated_jul2020_present,AG043366,2022.0,,,5.6,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,NOT_RECORDED,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#455,accident_gravity_reporting_regulated_jul2020_present,AG043387,2021.0,6.0,,1.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#460,accident_gravity_reporting_regulated_jul2020_present,AG043391,2021.0,4.0,,1.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18
+accident_gravity_reporting_regulated_jul2020_present#464,accident_gravity_reporting_regulated_jul2020_present,AG043394,2021.0,8.0,,11.4,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,19
+accident_gravity_reporting_regulated_jul2020_present#474,accident_gravity_reporting_regulated_jul2020_present,AG043402,2021.0,8.0,,6.0,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,17
+accident_gravity_reporting_regulated_jul2020_present#478,accident_gravity_reporting_regulated_jul2020_present,AG043403,2021.0,8.625,,11.18,NOT_COLLECTED,NOT_COLLECTED,NOT_COLLECTED,PIPE BODY,,,,,,,18

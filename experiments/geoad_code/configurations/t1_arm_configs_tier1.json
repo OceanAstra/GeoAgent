@@ -1,0 +1,303 @@
+{
+  "A_single": {
+    "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+    "protocol_lock_sha256": "c90cd2ab44b28d8a1c444cdd79b3641ec4c250ed79b62252c225a2848653ef6c",
+    "data": {
+      "manifest": "protocol/data_row_manifest.csv",
+      "manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a"
+    },
+    "dev_pool_rows": 42769,
+    "sealed_rows": 1065,
+    "feature_set": "MAIN_13",
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ],
+    "class_order": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "split_roles": {
+      "fit_rows": 29941,
+      "calib_rows": 6411,
+      "dev_confirm_rows": 6417
+    },
+    "group_isolation": "accident_group (incident-level isolation; pairwise disjoint across fit/calib/dev_confirm)",
+    "catboost": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "shared_by_all_arms": true,
+      "source": "g2_common.train_backbone"
+    },
+    "geoad_head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "backbone_residual": "log(clamp(cb, 1e-8)) + delta (retained across all arms)",
+      "source": "rq2_ablation_net.train_p_arm_masked(drop=proto, mode=retrain)",
+      "changed_hyperparams": "None"
+    },
+    "fusion": "t=exp(log_temp)+0.1; ar=exp(-||p-r||/t); ah=exp(-||p-h||/t); z=(p+ar*r+ah*h)/(1+ar+ah+1e-8); delta=W_delta(z) zero-initialized",
+    "arm": "Single CatBoost model (seed 42)",
+    "mode": "baseline",
+    "views_used": [],
+    "weights": "artifacts/cb_seed42.cbm"
+  },
+  "A_ensemble": {
+    "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+    "protocol_lock_sha256": "c90cd2ab44b28d8a1c444cdd79b3641ec4c250ed79b62252c225a2848653ef6c",
+    "data": {
+      "manifest": "protocol/data_row_manifest.csv",
+      "manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a"
+    },
+    "dev_pool_rows": 42769,
+    "sealed_rows": 1065,
+    "feature_set": "MAIN_13",
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ],
+    "class_order": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "split_roles": {
+      "fit_rows": 29941,
+      "calib_rows": 6411,
+      "dev_confirm_rows": 6417
+    },
+    "group_isolation": "accident_group (incident-level isolation; pairwise disjoint across fit/calib/dev_confirm)",
+    "catboost": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "shared_by_all_arms": true,
+      "source": "g2_common.train_backbone"
+    },
+    "geoad_head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "backbone_residual": "log(clamp(cb, 1e-8)) + delta (retained across all arms)",
+      "source": "rq2_ablation_net.train_p_arm_masked(drop=proto, mode=retrain)",
+      "changed_hyperparams": "None"
+    },
+    "fusion": "t=exp(log_temp)+0.1; ar=exp(-||p-r||/t); ah=exp(-||p-h||/t); z=(p+ar*r+ah*h)/(1+ar+ah+1e-8); delta=W_delta(z) zero-initialized",
+    "arm": "3-seed CatBoost ensemble (equal-weight probability mean)",
+    "mode": "baseline",
+    "views_used": [],
+    "weights": "artifacts/cb_seed{42,123,456}.cbm",
+    "train_seconds": 245.36
+  },
+  "F_concat": {
+    "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+    "protocol_lock_sha256": "c90cd2ab44b28d8a1c444cdd79b3641ec4c250ed79b62252c225a2848653ef6c",
+    "data": {
+      "manifest": "protocol/data_row_manifest.csv",
+      "manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a"
+    },
+    "dev_pool_rows": 42769,
+    "sealed_rows": 1065,
+    "feature_set": "MAIN_13",
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ],
+    "class_order": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "split_roles": {
+      "fit_rows": 29941,
+      "calib_rows": 6411,
+      "dev_confirm_rows": 6417
+    },
+    "group_isolation": "accident_group (incident-level isolation; pairwise disjoint across fit/calib/dev_confirm)",
+    "catboost": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "shared_by_all_arms": true,
+      "source": "g2_common.train_backbone"
+    },
+    "geoad_head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "backbone_residual": "log(clamp(cb, 1e-8)) + delta (retained across all arms)",
+      "source": "rq2_ablation_net.train_p_arm_masked(drop=proto, mode=retrain)",
+      "changed_hyperparams": "None"
+    },
+    "fusion": "t=exp(log_temp)+0.1; ar=exp(-||p-r||/t); ah=exp(-||p-h||/t); z=(p+ar*r+ah*h)/(1+ar+ah+1e-8); delta=W_delta(z) zero-initialized",
+    "arm": "Non-geometric residual head (19->32->6, no geometric weighting/alignment)",
+    "mode": "baseline",
+    "views_used": [
+      "concat(proto9, rule4, cb6)"
+    ],
+    "total_parameters": 838,
+    "train_seconds": 9.08,
+    "selected_epochs": [
+      1,
+      21,
+      0
+    ],
+    "calib_macro_f1": [
+      0.5855,
+      0.5853,
+      0.5875
+    ],
+    "weights": "artifacts/F_concat_seed{42,123,456}.pt"
+  },
+  "P_no_proto": {
+    "protocol": "RQ2-S2-LARGE-DEV-CONFIRM-v1",
+    "protocol_lock_sha256": "c90cd2ab44b28d8a1c444cdd79b3641ec4c250ed79b62252c225a2848653ef6c",
+    "data": {
+      "manifest": "protocol/data_row_manifest.csv",
+      "manifest_sha256": "d9ef45f215b429300628dd01d96f84b1e7f703b69ab35bccf523fa5f01c4046a"
+    },
+    "dev_pool_rows": 42769,
+    "sealed_rows": 1065,
+    "feature_set": "MAIN_13",
+    "excluded_leak_adjacent": [
+      "UNDER_CATHODIC_PROTECTION_IND",
+      "CP_ANNUAL_SURVEY_IND",
+      "CLOSE_INTERVAL_SURVEY_IND",
+      "EXTERNALLY_COATED",
+      "PRIOR_DAMAGE"
+    ],
+    "class_order": [
+      "CORROSION",
+      "EQUIPMENT_FAILURE",
+      "EXTERNAL_DAMAGE",
+      "MATERIAL_DEFECT",
+      "OPERATIONAL",
+      "OTHER"
+    ],
+    "split_roles": {
+      "fit_rows": 29941,
+      "calib_rows": 6411,
+      "dev_confirm_rows": 6417
+    },
+    "group_isolation": "accident_group (incident-level isolation; pairwise disjoint across fit/calib/dev_confirm)",
+    "catboost": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "oof_folds": 3,
+      "oof_group_key": "accident_group",
+      "oof_cv_seed": 42,
+      "shared_by_all_arms": true,
+      "source": "g2_common.train_backbone"
+    },
+    "geoad_head": {
+      "epochs": 80,
+      "lr": 0.01,
+      "lam_reg": 0.001,
+      "mu_align": 0.01,
+      "seeds": [
+        42,
+        123,
+        456
+      ],
+      "checkpoint_rule": "calib Macro-F1 argmax (earliest epoch on ties)",
+      "backbone_residual": "log(clamp(cb, 1e-8)) + delta (retained across all arms)",
+      "source": "rq2_ablation_net.train_p_arm_masked(drop=proto, mode=retrain)",
+      "changed_hyperparams": "None"
+    },
+    "fusion": "t=exp(log_temp)+0.1; ar=exp(-||p-r||/t); ah=exp(-||p-h||/t); z=(p+ar*r+ah*h)/(1+ar+ah+1e-8); delta=W_delta(z) zero-initialized",
+    "arm": "Primary model: Rule+Neural dual-view residual classifier (proto view dropped)",
+    "mode": "retrain",
+    "dropped": "proto",
+    "views_used": [
+      "rule",
+      "neural"
+    ],
+    "fusion_after_ablation": "Anchor = first retained view (rule); distance weight computed across retained views; alignment loss = mean pairwise MSE; backbone residual log(clamp(cb, 1e-8)) retained; dropped view projection excluded",
+    "total_parameters": 903,
+    "active_parameters": 583,
+    "train_seconds": 4.5,
+    "selected_epochs": [
+      0,
+      7,
+      0
+    ],
+    "calib_macro_f1": [
+      0.5902,
+      0.5889,
+      0.5862
+    ],
+    "weights": "artifacts/P_no_proto_seed{42,123,456}.pt"
+  }
+}

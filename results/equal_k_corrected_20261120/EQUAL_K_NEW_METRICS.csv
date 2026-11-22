@@ -1,0 +1,5 @@
+year,policy,k_from_full_agent,archived_changed,different_from_archived_rows,changed,corrected,harmed,wrong_to_wrong,net,accuracy_pct,macro_f1_pct
+2025,B0_CONFIDENCE_EQUAL_K,12,11,1,12,5,3,4,2,62.17712177,36.16699665
+2025,B1_MARGIN_EQUAL_K,12,11,1,12,9,2,1,7,63.099631,38.28460298
+2026,B0_CONFIDENCE_EQUAL_K,2,4,2,2,1,1,0,0,55.0,28.23725982
+2026,B1_MARGIN_EQUAL_K,2,4,2,2,2,0,0,2,60.0,39.87468672

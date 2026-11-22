@@ -1,0 +1,25 @@
+{
+  "generated_by": "t2_macro_perm.py",
+  "statistic": "Macro-F1 difference (b - a)",
+  "null_mechanism": "Within-group paired swap randomization",
+  "n_perm": 20000,
+  "seed": 42,
+  "holm_family": [
+    "E1",
+    "E2"
+  ],
+  "reference_not_in_family": [
+    "R1",
+    "R2"
+  ],
+  "n_groups": 6373,
+  "scope": "Paired permutation test on dev_confirm (n=6,417; development-confirmation split)",
+  "caveats": [
+    "McNemar and group sign-flip tests evaluate Accuracy; this script supplements them with Macro-F1 paired group permutation tests",
+    "Group bootstrap intervals are retained from t2_score.py",
+    "E1/E2 comparison family defined prior to Tier-2 training",
+    "dev_confirm serves as a development-confirmation set for mechanism analysis",
+    "No retraining, no model edits, and no access to held-out post-2023 records"
+  ],
+  "seconds": 14.42
+}

@@ -1,0 +1,1144 @@
+{
+  "zero_parameter_audit": [
+    {
+      "window": "2025",
+      "n": 542,
+      "p23_changes": 12,
+      "base_OP_rows": 20,
+      "base_OP_true_ED": 12,
+      "p23_all_changes_op_to_ed": true,
+      "p23_all_changes_are_fixes": true,
+      "posthoc_topK_rule_reproduces_p23_exactly": true,
+      "posthoc_topK_overlap": "12/12",
+      "nok_rule_changes": 20,
+      "nok_rule_fixes": 12,
+      "nok_rule_harms": 4,
+      "nok_rule_net": 8,
+      "p23_net": 12
+    },
+    {
+      "window": "2026",
+      "n": 40,
+      "p23_changes": 2,
+      "base_OP_rows": 2,
+      "base_OP_true_ED": 2,
+      "p23_all_changes_op_to_ed": true,
+      "p23_all_changes_are_fixes": true,
+      "posthoc_topK_rule_reproduces_p23_exactly": true,
+      "posthoc_topK_overlap": "2/2",
+      "nok_rule_changes": 2,
+      "nok_rule_fixes": 2,
+      "nok_rule_harms": 0,
+      "nok_rule_net": 2,
+      "p23_net": 2
+    },
+    {
+      "window": "ALL",
+      "n": 582,
+      "p23_changes": 14,
+      "base_OP_rows": 22,
+      "base_OP_true_ED": 14,
+      "p23_all_changes_op_to_ed": true,
+      "p23_all_changes_are_fixes": true,
+      "posthoc_topK_rule_reproduces_p23_exactly": true,
+      "posthoc_topK_overlap": "14/14",
+      "nok_rule_changes": 22,
+      "nok_rule_fixes": 14,
+      "nok_rule_harms": 4,
+      "nok_rule_net": 10,
+      "p23_net": 14
+    }
+  ],
+  "repair_case_ranks": {
+    "2": 9,
+    "3": 5
+  },
+  "repair_rank_summary": {
+    "2": 9,
+    "3": 5
+  },
+  "per_class": [
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.5815602836879432,
+      "recall": 0.6507936507936508,
+      "f1": 0.6142322097378277,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6869300911854104,
+      "recall": 0.9617021276595744,
+      "f1": 0.8014184397163121,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.5,
+      "recall": 0.14285714285714285,
+      "f1": 0.2222222222222222,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.4,
+      "recall": 0.36363636363636365,
+      "f1": 0.38095238095238093,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.2,
+      "recall": 0.0851063829787234,
+      "f1": 0.11940298507462686,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "KEEP",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.5815602836879432,
+      "recall": 0.6507936507936508,
+      "f1": 0.6142322097378277,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6869300911854104,
+      "recall": 0.9617021276595744,
+      "f1": 0.8014184397163121,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.6764705882352942,
+      "recall": 0.2987012987012987,
+      "f1": 0.4144144144144144,
+      "recall_delta_vs_keep": 0.15584415584415584
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.4,
+      "recall": 0.36363636363636365,
+      "f1": 0.38095238095238093,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.5,
+      "recall": 0.0851063829787234,
+      "f1": 0.14545454545454545,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.5912408759124088,
+      "recall": 0.6428571428571429,
+      "f1": 0.6159695817490495,
+      "recall_delta_vs_keep": -0.007936507936507908
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6848484848484848,
+      "recall": 0.9617021276595744,
+      "f1": 0.8,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.6341463414634146,
+      "recall": 0.33766233766233766,
+      "f1": 0.4406779661016949,
+      "recall_delta_vs_keep": 0.19480519480519481
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.4230769230769231,
+      "recall": 0.3333333333333333,
+      "f1": 0.3728813559322034,
+      "recall_delta_vs_keep": -0.03030303030303033
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.5,
+      "recall": 0.0851063829787234,
+      "f1": 0.14545454545454545,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.5815602836879432,
+      "recall": 0.6507936507936508,
+      "f1": 0.6142322097378277,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6869300911854104,
+      "recall": 0.9617021276595744,
+      "f1": 0.8014184397163121,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.6666666666666666,
+      "recall": 0.2857142857142857,
+      "f1": 0.4,
+      "recall_delta_vs_keep": 0.14285714285714285
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.4,
+      "recall": 0.36363636363636365,
+      "f1": 0.38095238095238093,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.4444444444444444,
+      "recall": 0.0851063829787234,
+      "f1": 0.14285714285714285,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.5774647887323944,
+      "recall": 0.6507936507936508,
+      "f1": 0.6119402985074627,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6838905775075987,
+      "recall": 0.9574468085106383,
+      "f1": 0.7978723404255319,
+      "recall_delta_vs_keep": -0.004255319148936065
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.6451612903225806,
+      "recall": 0.2597402597402597,
+      "f1": 0.37037037037037035,
+      "recall_delta_vs_keep": 0.11688311688311687
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.4,
+      "recall": 0.36363636363636365,
+      "f1": 0.38095238095238093,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.4,
+      "recall": 0.0851063829787234,
+      "f1": 0.14035087719298245,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "CORROSION",
+      "support": 126,
+      "precision": 0.6259541984732825,
+      "recall": 0.6507936507936508,
+      "f1": 0.6381322957198443,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 235,
+      "precision": 0.6705882352941176,
+      "recall": 0.9702127659574468,
+      "f1": 0.7930434782608695,
+      "recall_delta_vs_keep": 0.008510638297872353
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 77,
+      "precision": 0.6304347826086957,
+      "recall": 0.37662337662337664,
+      "f1": 0.4715447154471545,
+      "recall_delta_vs_keep": 0.2337662337662338
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "MATERIAL_DEFECT",
+      "support": 33,
+      "precision": 0.45454545454545453,
+      "recall": 0.30303030303030304,
+      "f1": 0.36363636363636365,
+      "recall_delta_vs_keep": -0.06060606060606061
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OPERATIONAL",
+      "support": 47,
+      "precision": 0.3333333333333333,
+      "recall": 0.02127659574468085,
+      "f1": 0.04,
+      "recall_delta_vs_keep": -0.06382978723404255
+    },
+    {
+      "window": "2025",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OTHER",
+      "support": 24,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.46153846153846156,
+      "recall": 0.8571428571428571,
+      "f1": 0.6,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333333333333333,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "KEEP",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.46153846153846156,
+      "recall": 0.8571428571428571,
+      "f1": 0.6,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "recall_delta_vs_keep": 0.39999999999999997
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.5454545454545454,
+      "recall": 0.8571428571428571,
+      "f1": 0.6666666666666666,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "recall_delta_vs_keep": 0.6000000000000001
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1": 0.4,
+      "recall_delta_vs_keep": 0.3333333333333333
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.5384615384615384,
+      "recall": 1.0,
+      "f1": 0.7,
+      "recall_delta_vs_keep": 0.1428571428571429
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "recall_delta_vs_keep": 0.6000000000000001
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.45454545454545453,
+      "recall": 0.7142857142857143,
+      "f1": 0.5555555555555556,
+      "recall_delta_vs_keep": -0.1428571428571428
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666666,
+      "recall_delta_vs_keep": 0.39999999999999997
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.5,
+      "recall": 0.3333333333333333,
+      "f1": 0.4,
+      "recall_delta_vs_keep": 0.3333333333333333
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "CORROSION",
+      "support": 7,
+      "precision": 0.5384615384615384,
+      "recall": 1.0,
+      "f1": 0.7,
+      "recall_delta_vs_keep": 0.1428571428571429
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 15,
+      "precision": 0.6521739130434783,
+      "recall": 1.0,
+      "f1": 0.7894736842105263,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 5,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888,
+      "recall_delta_vs_keep": 0.6000000000000001
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "MATERIAL_DEFECT",
+      "support": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OPERATIONAL",
+      "support": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "2026",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OTHER",
+      "support": 9,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.5714285714285714,
+      "recall": 0.6616541353383458,
+      "f1": 0.6132404181184669,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6846590909090909,
+      "recall": 0.964,
+      "f1": 0.8006644518272426,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.5217391304347826,
+      "recall": 0.14634146341463414,
+      "f1": 0.22857142857142856,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.3870967741935484,
+      "recall": 0.3333333333333333,
+      "f1": 0.3582089552238806,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.18181818181818182,
+      "recall": 0.08333333333333333,
+      "f1": 0.11428571428571428,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "KEEP",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.5714285714285714,
+      "recall": 0.6616541353383458,
+      "f1": 0.6132404181184669,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6846590909090909,
+      "recall": 0.964,
+      "f1": 0.8006644518272426,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.7027027027027027,
+      "recall": 0.3170731707317073,
+      "f1": 0.4369747899159664,
+      "recall_delta_vs_keep": 0.17073170731707318
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.3870967741935484,
+      "recall": 0.3333333333333333,
+      "f1": 0.3582089552238806,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.5,
+      "recall": 0.08333333333333333,
+      "f1": 0.14285714285714285,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_FEEDBACK_MEMORY",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.5878378378378378,
+      "recall": 0.6541353383458647,
+      "f1": 0.6192170818505338,
+      "recall_delta_vs_keep": -0.007518796992481147
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6827195467422096,
+      "recall": 0.964,
+      "f1": 0.7993366500829188,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.6666666666666666,
+      "recall": 0.36585365853658536,
+      "f1": 0.47244094488188976,
+      "recall_delta_vs_keep": 0.21951219512195122
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.42857142857142855,
+      "recall": 0.3333333333333333,
+      "f1": 0.375,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.5,
+      "recall": 0.08333333333333333,
+      "f1": 0.14285714285714285,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P23_NO_MEMORY",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.577922077922078,
+      "recall": 0.6691729323308271,
+      "f1": 0.6202090592334495,
+      "recall_delta_vs_keep": 0.007518796992481258
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6846590909090909,
+      "recall": 0.964,
+      "f1": 0.8006644518272426,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.7027027027027027,
+      "recall": 0.3170731707317073,
+      "f1": 0.4369747899159664,
+      "recall_delta_vs_keep": 0.17073170731707318
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.4,
+      "recall": 0.3333333333333333,
+      "f1": 0.36363636363636365,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.4444444444444444,
+      "recall": 0.08333333333333333,
+      "f1": 0.14035087719298245,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "P24_CONDITIONAL",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.5686274509803921,
+      "recall": 0.6541353383458647,
+      "f1": 0.6083916083916084,
+      "recall_delta_vs_keep": -0.007518796992481147
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6818181818181818,
+      "recall": 0.96,
+      "f1": 0.7973421926910299,
+      "recall_delta_vs_keep": -0.0040000000000000036
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.6571428571428571,
+      "recall": 0.2804878048780488,
+      "f1": 0.39316239316239315,
+      "recall_delta_vs_keep": 0.13414634146341467
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.40625,
+      "recall": 0.3611111111111111,
+      "f1": 0.38235294117647056,
+      "recall_delta_vs_keep": 0.02777777777777779
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.4,
+      "recall": 0.08333333333333333,
+      "f1": 0.13793103448275862,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "B1_MARGIN_EQUAL_K",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "CORROSION",
+      "support": 133,
+      "precision": 0.6180555555555556,
+      "recall": 0.6691729323308271,
+      "f1": 0.6425992779783394,
+      "recall_delta_vs_keep": 0.007518796992481258
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EQUIPMENT_FAILURE",
+      "support": 250,
+      "precision": 0.6694214876033058,
+      "recall": 0.972,
+      "f1": 0.7928221859706363,
+      "recall_delta_vs_keep": 0.008000000000000007
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "EXTERNAL_DAMAGE",
+      "support": 82,
+      "precision": 0.66,
+      "recall": 0.4024390243902439,
+      "f1": 0.5,
+      "recall_delta_vs_keep": 0.25609756097560976
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "MATERIAL_DEFECT",
+      "support": 36,
+      "precision": 0.45454545454545453,
+      "recall": 0.2777777777777778,
+      "f1": 0.3448275862068966,
+      "recall_delta_vs_keep": -0.055555555555555525
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OPERATIONAL",
+      "support": 48,
+      "precision": 0.3333333333333333,
+      "recall": 0.020833333333333332,
+      "f1": 0.0392156862745098,
+      "recall_delta_vs_keep": -0.0625
+    },
+    {
+      "window": "ALL",
+      "arm": "ORDINARY_LOGREG",
+      "cls": "OTHER",
+      "support": 33,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "recall_delta_vs_keep": 0.0
+    }
+  ],
+  "nok_rule_note": "no-K variant flips every base-OPERATIONAL row; included to show why the K constraint matters (it adds 4 harmful changes in 2025)",
+  "equivalence_note": "The post-hoc top-K rule uses the frozen GeOAD p_EXTERNAL_DAMAGE and the action count K observed from P23. It reproduces the P23 change set exactly, so the learning layer adds no selection information on this window."
+}

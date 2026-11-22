@@ -1,0 +1,16 @@
+arm,n,accuracy_pct,macro_f1_pct,weighted_f1_pct,mcc,status,adapted_implementation
+B1_MARGIN_MATCH_P24_K,6417,71.6067,58.4198,69.3203,0.6163,agent_layer_on_geoad,False
+GeOAD_KEEP,6417,71.5911,58.6332,69.4082,0.6162,diagnosis_reference,False
+P24_CONDITIONAL,6417,71.5599,58.5385,69.3475,0.6155,agent_layer_on_geoad,False
+P21_FIXED,6417,71.482,57.3243,68.9265,0.6145,agent_layer_on_geoad,False
+ORDINARY_LOGREG,6417,71.482,59.2292,69.4351,0.6143,agent_layer_on_geoad,False
+P23_NO_MEMORY,6417,71.1859,58.2739,68.8308,0.6103,agent_layer_on_geoad,False
+U1_LEARNED,6417,71.0924,58.7245,69.2331,0.6095,agent_layer_on_geoad,False
+1DCNN-DBO-LSTM,6417,69.7678,54.0799,66.9736,0.5906,external_baseline_adapted,True
+DeepPipe,6417,69.4873,56.3087,67.1726,0.5863,external_baseline_adapted,True
+SART-1DCNN,6417,69.0821,55.3,66.7908,0.5816,external_baseline_adapted,True
+MFF-CNN-LightGBM,6417,68.225,55.7094,66.106,0.5691,external_baseline_adapted,True
+DeepPipeNet,6417,65.4356,56.5636,65.2936,0.5443,external_baseline_adapted,True
+SMDPSO-SVM,6417,63.8772,47.0381,59.6638,0.5067,external_baseline_adapted,True
+AUTDL,6417,59.5917,39.5759,52.6822,0.4478,external_baseline_adapted,True
+CIC,6417,55.914,50.977,57.4931,0.4512,external_baseline_adapted,True
